@@ -1,12 +1,16 @@
 import './bootstrap';
 
-import { createApp } from 'vue';
-import router from "./router";
-import CompaniesIndex from '@/components/companies/CompaniesIndex.vue';
 
+
+import {
+    createApp
+} from 'vue';
+import router from './router'
+
+import CompaniesIndex from '@/components/Companies/CompaniesIndex.vue';
 
 createApp({
     components: {
         CompaniesIndex
-        }
-    }).use(router).mount('#app')
+    }
+}).use(router).mount('#app')
